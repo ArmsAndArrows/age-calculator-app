@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body class="font-appFont bg-gray-900 flex justify-center items-start">
+    <main class="bg-gray-950 px-6 pt-[2.7rem] mt-[5.5rem] mx-[4%]  rounded-3xl rounded-br-[6rem] max-w-[52.5rem] lg:mt-[10.8%] lg:pt-[3.2rem] lg:px-14 lg:rounded-br-[11.5rem] shadow-md shadow-lime-300"  >
+        <!--INPUT CONTAINER-->
+        <div class="grid grid-cols-3 gap-4 relative pb-16 border-b-2 border-gray-500 lg:grid-cols-4 lg:gap-[2rem] lg:pb-12">
+            <div class="">
+                <label class="label inline-block mb-1 lg:mb-2.5"for="day">Day</label>
+                <input class=" bg-gray-950 text-white w-full box-border text-xl outline-none font-bold border border-gray-500 py-[0.7rem] mt-[0.1rem] px-4 rounded-md lg:text-3xl lg:py-[0.75rem] lg:px-[1.6rem]" id="day" type="text" maxlength="2" placeholder="DD">
+                <span id="day-err" class="block absolute text-gray-300 bottom-7 lg:bottom-3 text-sm"></span>
+            </div>
+            <div class="">
+                <label class="label inline-block mb-1 lg:mb-2.5" for="month">Month</label>
+                <input class="bg-gray-950 text-white  w-full text-xl outline-none font-bold border border-gray-500 py-[0.7rem] mt-[0.1rem] px-4 rounded-md lg:text-3xl lg:py-[0.75rem] lg:px-[1.6rem] " id="month" type="text" maxlength="2" placeholder="MM">
+                <span id="month-err" class="block absolute text-gray-300 bottom-7 lg:bottom-3 text-sm"></span>
+            </div>
+            <div class="">
+                <label class="label inline-block mb-1 lg:mb-2.5" for="year">Year</label>
+                <input class=" bg-gray-950 text-white w-full text-xl outline-none font-bold border border-gray-500 py-[0.7rem] mt-[0.1rem] px-4 rounded-md lg:text-3xl lg:py-[0.75rem] lg:px-[1.6rem]" type="text" maxlength="4" id="year" type="text" maxlength="4" placeholder="YYYY">
+                <span id="year-err" class="block absolute text-gray-300 bottom-7 lg:bottom-3 text-sm"></span>
+              </div>
+            <a id="button" class="cursor-pointer block absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%] bg-lime-500 rounded-full lg:right-0 lg:translate-x-[0%] lg:left-auto transition-all duration-200 ease-out hover:bg-purple-500 active:bg-red-700" >
+                <svg class="w-auto h-[1.6rem] inline-block p-[1.2rem]  stroke-2 box-content lg:h-[2.7rem] lg:p-[1.6rem]" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#000" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+            </a>
+        </div>
+        <!--output container-->
+        <div class="pt-[3.9rem] pb-12 lg:pt-[2.8rem] lg:pb-14 ">
+            <p  class="text-[3.5rem] italic liner lg:text-[6.5rem] "><span id="result-year" class="tracking-tight lg:tracking-[1rem] text-lime-500">--</span><span class="ml-[0.6rem] tracking-tight lg:tracking-tightest lg:ml-[-0.3rem] text-white">years</span></p>
+            <p  class="text-[3.5rem] italic liner lg:text-[6.5rem]"><span id="result-month" class="tracking-tight lg:tracking-[1rem] text-lime-500">--</span><span class="ml-[0.7rem] tracking-tight lg:tracking-tightest lg:ml-[-0.3rem] text-white ">months</span></p>
+            <p  class="text-[3.5rem] italic liner lg:text-[6.5rem]"><span id="result-day" class="tracking-tight lg:tracking-[1rem] text-lime-500">--</span><span class="ml-[0.6rem] tracking-tight lg:tracking-tightest lg:ml-[-0.3rem] text-white">days</span></p>
+
+        </div>
+    </main>
+    <script src="../index.js"></script>
+  </body>
+</html>

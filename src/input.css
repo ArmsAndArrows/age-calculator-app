@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.label{
+    @apply text-gray-500 tracking-[0.21rem] text-xs uppercase font-bold lg:text-[0.9rem] lg:tracking-[0.15rem];
+}
+
+@layer base{
+    
+    @media only screen and (max-width: 374px) {
+        html{
+            font-size: 80%;
+        }
+    }
+    @media only screen and (max-width: 290px) {
+        html{
+            font-size: 70%;
+        }
+    }
+    @media only screen and (max-width: 260px) {
+        html{
+            font-size: 60%;
+        }
+    }
+}
+
+
+@layer utilities{
+    .liner{
+        line-height: 1.1;
+    }
+}
