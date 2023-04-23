@@ -1,6 +1,6 @@
 # Age Calculator App
 
-This is a simple Age Calculator web application, built using HTML, CSS and JavaScript. It allows users to input their date of birth and returns their age in years and months.
+This is a simple Age Calculator web application, built using HTML, Tailwind and JavaScript. It allows users to input their date of birth and returns their age in years and months.
 
 ## Features
 
