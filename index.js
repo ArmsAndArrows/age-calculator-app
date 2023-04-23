@@ -48,7 +48,7 @@ function validateInput() {
 
   if (year.value > currentYear || year.value < 1900) {
     yearError.innerHTML = "Must be a valid year";
-    day.style.borderColor = "red";
+    year.style.borderColor = "red";
     isValid = false;
   }
 
