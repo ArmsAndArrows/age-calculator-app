@@ -23,7 +23,7 @@ This is a simple Age Calculator web application, built using HTML, Tailwind and 
 
 ## Credits
 
-This project was inspired by a challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-5d16b238b36e2a0025748fac).
+This project was inspired by a challenge on [Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q).
 
 ## License
 
