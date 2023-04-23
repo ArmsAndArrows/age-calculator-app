@@ -51,17 +51,27 @@ function validateInput() {
     year.style.borderColor = "red";
     isValid = false;
   }
+  else {
+    year.style.borderColor = "rgb(107, 114, 128)";
+
+  }
 
   if (month.value > 12 || month.value < 1) {
     monthError.innerHTML = "Must be a valid month";
     month.style.borderColor = "red";
     isValid = false;
+  } else {
+    month.style.borderColor = "rgb(107, 114, 128)";
+
   }
 
   if (day.value > 31 || day.value < 1) {
     dayError.innerHTML = "Must be a valid day";
     day.style.borderColor = "red";
     isValid = false;
+  } else {
+    day.style.borderColor = "rgb(107, 114, 128)";
+
   }
 
   return isValid;
